@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 // npm i @emailjs/browser
 
-const Contact = () => {
+const Survey = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <StyledContactForm>
+    <StyledSurveyForm>
       <div style={{ textAlign: "center" }}>
         <h1 style={{ fontFamily: '"Courier New", Courier, monospace' }}>
           Feedback Survey
@@ -44,14 +44,14 @@ const Contact = () => {
         <textarea name="message" />
         <input type="submit" value="Send" />
       </form>
-    </StyledContactForm>
+    </StyledSurveyForm>
   );
 };
 
-export default Contact;
+export default Survey;
 
 // Styles
-const StyledContactForm = styled.div`
+const StyledSurveyForm = styled.div`
   width: 400px;
 
   form {
